@@ -1,6 +1,6 @@
 
 
-const BASE_URL = 'http://localhost:5000';
+const BASE_URL = 'https://empbackend-x0q6.onrender.com';
 
 export const GetAllEmployees = async (search = '', page = 1, limit = 5) => {
     const url =
