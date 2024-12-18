@@ -1,6 +1,6 @@
+//import axios from 'axios'
 
-
-const BASE_URL = 'https://empbackend-x0q6.onrender.com';
+const BASE_URL = 'http://localhost:5000';
 
 export const GetAllEmployees = async (search = '', page = 1, limit = 5) => {
     const url =
@@ -14,10 +14,16 @@ export const GetAllEmployees = async (search = '', page = 1, limit = 5) => {
     try {
         const result = await fetch(url, options);
         const { data } = await result.json();
+        // const result =await axios.get("https://empbackend-x0q6.onrender.com/api/employees")
+        // const {data}=await result.data
 
+console.log(data)
         return data;
-    } catch (err) {
+    } catch (err)
+     {
+      console.log(err)
         return err;
+        
     }
 }
 export const CreateEmployee = async (empObj) => {
@@ -72,9 +78,9 @@ export const UpdateEmployeeById = async (empObj, id) => {
     const options = {
         method: 'PUT',
         headers: {
-            'Content-Type': 'application/json', // Correct for JSON
+            'Content-Type': 'application/json', 
         },
-        body: JSON.stringify(empObj), // Convert empObj to JSON string
+        body: JSON.stringify(empObj), 
     };
 
     try {

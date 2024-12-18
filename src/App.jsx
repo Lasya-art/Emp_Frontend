@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import EmployeeManagementApp from './Components/EmployeeManagementApp';
 import EmployeeDetails from './Components/EmployeeDetails';
-import Home from './components/Home';
+import Home from './Components/Home';
 import Departments from './Components/Department';
 import "./App.css";
 

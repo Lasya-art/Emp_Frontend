@@ -126,7 +126,7 @@ fetchEmployees(term)
             />
           </div>
 
-          {/* Fix: Properly pass employees and pagination props to EmployeeTable */}
+          {/* Properly pass employees and pagination props to EmployeeTable */}
           <EmployeeTable
             employees={employeesData.employees} // Passing employees prop
             pagination={employeesData.pagination} // Passing pagination prop

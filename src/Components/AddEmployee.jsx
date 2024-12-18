@@ -13,7 +13,7 @@ function AddEmployee({
     department: '',
     salary: '',
 
-    // profileImage: null
+    
   });
   const [updateMode, setUpdateMode] = useState(false);
 
@@ -29,9 +29,7 @@ function AddEmployee({
     setEmployee({ ...employee, [name]: value });
   };
 
-  // const handleFileChange = (e) => {
-  //     setEmployee({ ...employee, profileImage: e.target.files[0] });
-  // };
+  
 
   const resetEmployeeStates = () => {
       setEmployee({
@@ -40,7 +38,7 @@ function AddEmployee({
           phone: '',
           department: '',
           salary: '',
-          // profileImage: null,
+          
       })
   }
 
