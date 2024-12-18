@@ -174,13 +174,7 @@ return (
               />
             </div>
             {/* <div className="mb-3">
-                                <label className="form-label">Profile Image</label>
-                                <input
-                                    type="file"
-                                    className="form-control"
-                                    name="profileImage"
-                                    onChange={handleFileChange}
-                                />
+                               
                             </div> */}
             <div className="modal-footer">
               <button
